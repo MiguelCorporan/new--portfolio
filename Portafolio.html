@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Portafolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Portafolio</title>
+    <meta name="application-name" content="miguel corporan">
+    <meta name="twitter:card" content="Soy un joven programador que especializa en crear paginas web para el Front-end">
+    <meta name="twitter:site" content="@mcorporan536">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#fb6d43">
+    <meta content="Programador y desarrollador web especialista en Front-end" name="description">
+    <meta content="Programador y desarrollador web especialista en Front-end" name="twitter:description" property="og:description">
+    <link rel="canonical" href="https://miguel-corporan.netlify.app/">
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"><h1 class="inicio">Mi Portafolio</h1></a>
+
+      <button class="boton" id="boton">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 nonen"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+
+      <nav class="nav">
+        <a href="#">inicio</a>
+       <a href="#contact">contact</a>
+        <a href="#">desc.proyect</a>
+      </nav>
+    </header>
+
+
+    <article class="modal" id="contact">
+      <div class="modal-conten">
+        <a href="#close" class="modal-close">
+          <svg
+            class="w-6 h-6 esvg"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+        </a>
+        <div class="elforn">
+            <h2 class="fornH">Contact</h2>
+            <form id="recibe">
+              <input type="text" name="name" placeholder="Name" class="name">
+              <input type="email" name="email" id="email" placeholder="Email" class="email">
+              <textarea name="message" id="text" cols="30" rows="10" class="area"></textarea>
+              <input type="submit" value="enviar" class="enviar">
+            </form>
+
+            <div class="redes">
+              <i class="fab fa-facebook-square redesl face"></i>
+               <a href="https://twitter.com/mcorporan536"><i class="fab fa-twitter-square redesl twi"></i></a>
+              <a href="https://www.linkedin.com/in/miguel-corporan-30638a223/"> <i class="fab fa-linkedin redesl lin"></i> </a> 
+             <a href="https://github.com/MiguelCorporan"> <i class="fab fa-github redesl git"></i> </a>
+            </div>
+        </div> 
+      </div>
+    </article>
+
+
+    <div id="otra" class="block">
+      <section class="container">
+        <main class="main">
+          <div class="conten-img">
+            <img class="img-yo" src="indice.jpg" alt="" />
+          </div>
+
+          <div class="dentro-main">
+            <h2 class="me">Miguel Corporan</h2>
+
+            <p class="main-p">
+             Mi nombre es Miguel corporan soy un programador Frond-end autodidacta
+             en busca de nuevas experiencias que desafien mi conocimiento. Soy de mente abierta y rapido aprendizaje. Mi experiencia actual esta basada en mis propios proyectos pero espero pronto poder trabajar en equipo junto a otras personas que me aporten mas conocimiento. Cualquier duda no dude en escribirme.
+            </p>
+          </div>
+        </main>
+
+        <div class="habilidades">
+          <ul class="habilitys">
+            <li><i class="fab fa-html5 nara"></i> <p class="habi">Html5</p> </li>
+            <li><i class="fab fa-css3-alt dise"></i> <p class="habi">Css3</p> </li>
+            <li><i class="fab fa-js-square jota"></i> <p class="habi">J.Script</p> </li>
+            <li><i class="fab fa-react azul"></i> <p class="habi">React</p> </li>
+            <li><i class="fab fa-sass sas"></i> <p class="habi">Sas</p> </li>
+            <li><i class="fab fa-github "></i><p class="habi">Git</p> </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr />
+
+      <!--  <hr class="hr2" /> -->
+
+      <section class="contenedor-skill">
+        <h2 class="proyecto">Proyectos</h2>
+
+        <div class="slider">
+          <div class="skill">
+            <a href="#slide-1">H<span class="none">TML</span></a>
+            <a href="#slide-2">C<span class="none">SS</span></a>
+            <a href="#slide-3">J<span class="none">AVASCRIPT</span></a>
+            <a href="#slide-4">R<span class="none">EACT</span></a>
+          </div>
+
+          <div class="slides">
+            <div id="slide-1">
+              <div class="sliderh">
+                <div class="skillh">
+                  <a href="#slide-1h"><span class="nones">+</span></a>
+                  <a href="#slide-2h"><span class="nones">+</span></a>
+                  <a href="#slide-3h"><span class="nones">+</span></a>
+                  <a href="#slide-4h"><span class="nones">+</span></a>
+                </div>
+
+                <div class="slidesh">
+                  <div id="slide-1h"><img src="photos/IMGHTML1.jpg" alt=""></div>
+                  <div id="slide-2h"><img src="photos/IMGHTML2.jpg" alt=""></div>
+                  <div id="slide-3h"><img src="photos/IMGHTML3.jpg" alt=""></div>
+                  <div id="slide-4h"><img src="photos/IMGHTML4.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="slide-2">
+              <div class="sliders">
+                <div class="skills">
+                  <a href="#slide-1s"><span class="nones">+</span></a>
+                  <a href="#slide-2s"><span class="nones">+</span></a>
+                  <a href="#slide-3s"><span class="nones">+</span></a>
+                  <a href="#slide-4s"><span class="nones">+</span></a>
+                </div>
+
+                <div class="slidesr">
+                  <div id="slide-1s"><img src="photos/IMGCSS1.jpg" alt=""></div>
+                  <div id="slide-2s"><img src="photos/IMGCSS2.jpg" alt=""></div>
+                  <div id="slide-3s"><img src="photos/IMGCSS3.jpg" alt=""></div>
+                  <div id="slide-4s"><img src="photos/IMGCSS4.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="slide-3">
+              <div class="sliderj">
+                <div class="skillj">
+                  <a href="#slide-1j"><span class="nones">+</span></a>
+                  <a href="#slide-2j"><span class="nones">+</span></a>
+                  <a href="#slide-3j"><span class="nones">+</span></a>
+                  <a href="#slide-4j"><span class="nones">+</span></a>
+                </div>
+
+                <div class="slidesr">
+                  <div id="slide-1j">Proximamente</div>
+                  <div id="slide-2j">Proximamente</div>
+                  <div id="slide-3j">Proximamente</div>
+                  <div id="slide-4j">Proximamente</div>
+                </div>
+              </div>
+            </div>
+
+            <div id="slide-4">
+              <div class="sliderr">
+                <div class="skillr">
+                  <a href="#slide-1r"><span class="nones">+</span></a>
+                  <a href="#slide-2r"><span class="nones">+</span></a>
+                  <a href="#slide-3r"><span class="nones">+</span></a>
+                  <a href="#slide-4r"><span class="nones">+</span></a>
+                </div>
+
+                <div class="slidesrr">
+                  <div id="slide-1r"><img src="photos/IMGREACT1.jpg" alt=""></div>
+                  <div id="slide-2r"><img src="photos/IMGREACT2.jpg" alt=""></div>
+                  <div id="slide-3r"><img src="photos/IMGREACT3.jpg" alt=""></div>
+                  <div id="slide-4r"><img src="photos/IMGREACT5.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-------------------------------------------->
+
+    <section id="otro" class="nonen">
+      <div class="temas">
+        <h2 class="habili">Descripcion de proyectos</h2>
+
+        <div class="flecha"><i class="fas fa-arrow-down"></i></div>
+
+        <section class="temarios">
+          <article class="html every">
+            <strong class="mb">Html</strong>
+            <div class="da">
+              Esta es una breve descripcion de el proyecto de html que veras
+              acontinuacion, en este proyecto intento hacer un buen maquetado de
+              un sitio web usando mas html que cualquier otro tipo de codigo de
+              maquetado pero tambien dandole un buen estilo al sitio web.
+            </div>
+
+            <div class="ver">
+              <a href="https://github.com/MiguelCorporan/Proyecto_-Html" class="watch">
+                <i class="fab fa-github-alt icon"></i>
+              </a>
+
+              <a href="https://goofy-swanson-f4214e.netlify.app/" class="fli">
+                <i class="far fa-eye icon"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="css every">
+            <strong>Css</strong>
+            <div class="da">
+              Esta es una breve descripcion de el proyecto de Css, en la cual te explico de que se trata el mismo o que quize demostrar en este: en este proyecto quize reflejar algo simple pero con muchos estilos haciendo asi que sea vea lo mas bonito y detallado posible, demostrando que se puede tener una buna pagina sin js 
+            </div>
+
+            <div class="ver">
+              <a href="https://github.com/MiguelCorporan/Proyecto_Css" class="watch">
+                <i class="fab fa-github-alt icon"></i>
+              </a>
+              <a href="https://shoping-computers.netlify.app/#view1" class="fli">
+                <i class="far fa-eye icon"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="js every">
+            <strong>JavaScript</strong>
+            <div class="da">
+              PROXIMAMENTE
+            </div>
+
+            <div class="ver">
+              <a href="" class="watch">
+                <i class="fab fa-github-alt icon"></i>
+              </a>
+              <a href="" class="fli">
+                <i class="far fa-eye icon"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="react every">
+            <strong>React</strong>
+            <div class="da">
+               Esta es una breve descripcion de mi proyecto de React, Proyecto en el cual intento hacer una tienda, que sea simple eh intuitiba para el usuario
+            </div>
+
+            <div class="ver">
+              <a href="https://github.com/MiguelCorporan/Proyecto_React" class="watch">
+                <i class="fab fa-github-alt icon"></i>
+              </a>
+              <a href="
+              tutiendaa.netlify.app" class="fli">
+                <i class="far fa-eye icon"></i>
+              </a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <i class="fab fa-facebook-square face"></i>
+       <a href="https://twitter.com/mcorporan536"><i class="fab fa-twitter-square twi"></i></a>
+       <a href="https://www.linkedin.com/in/miguel-corporan-30638a223/"><i class="fab fa-linkedin  lin"></i></a>
+       <a href="https://github.com/MiguelCorporan"><i class="fab fa-github  git"></i></a>
+    </footer>
+
+    <script src="Portafolio.js"></script>
+  </body>
+</html>

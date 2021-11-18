@@ -1,0 +1,907 @@
+:root{
+    --bg-color:#15181C;
+}
+
+/*-#70707088-*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nonen{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    font-size: 16px;
+    background-color:#000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.container{
+    min-height: calc(100vh - 7rem);
+    margin-bottom: 3rem;   
+}
+
+.nav{
+    width: 40%;
+    min-height: 60vh;
+    position: absolute;
+    top: 3rem;
+    background-color: rgb(95, 95, 95);
+    right: 0;
+    transform: translateX(100%);
+    transition: transform .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav a{
+    width: 100%;
+    font-size: 1.2rem;
+    color: #ffff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+.nav a:nth-child(2){
+    margin: .6rem;
+}
+
+.view{
+    transform: translateX(0); 
+}
+
+.boton{
+    background-color: transparent;
+    padding: .8rem;
+    border: none;
+}
+
+.boton svg{
+   width: 2rem;
+   height: 2rem;
+   color: rgb(0, 0, 0);
+}
+
+.esvg{
+    width: 1rem;
+    height: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.modal{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49, 49, 49, 0.384);
+    opacity: 0;
+    pointer-events: none;
+    transform: all 1s;
+}
+
+.modal-conten{
+    position: relative;
+}
+
+.modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal-close svg{
+    width: 2.5rem;
+    height: 3rem;
+    fill: rgb(0, 0, 0);
+}
+
+.modal#contact:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.elforn{
+    width: 27rem;
+    height: 34rem;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+.fornH{
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#recibe{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.name{
+  width: 80%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.712);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+} 
+
+.email{
+    width: 70%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.712);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+} 
+
+.area{
+  width: 55%;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.712);
+  color: rgb(255, 255, 255);
+}
+
+.enviar{
+  width: 20%;
+  height: 1.5rem;
+  border-radius: 10px;
+  background-color: #000;
+  color: #eee;
+}
+
+.redes{
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redesl{
+    font-size: 3rem;
+}
+
+.face{
+    color: #3C538B;
+}
+
+.twi{
+    color: #1C99E6;
+}
+
+.lin{
+    color: #0961B8;
+}
+
+.git{
+    color: #000000;
+}
+
+.main{
+width: 85%;
+margin-left: auto;
+margin-right:auto;
+margin-bottom: 1rem;
+display: flex;
+flex-direction: column;
+text-align: center;
+height: 33rem;
+
+}
+
+
+.conten-img{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+}
+
+.img-yo{
+    border-radius: 50%;
+    display: block;
+}
+
+.me{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.main-p{
+ line-height: 1.3rem;
+ text-align: center;
+}
+
+
+
+.habilitys{
+    display: flex;
+    height: 3rem;
+}
+
+.habilitys li{
+  font-size: 2.8rem;
+   margin: .3rem;
+   list-style-type: none;
+}
+
+.habilidades{
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.azul{
+    color: #5ED3F3;
+}
+
+.nara{
+    color: #DC4A25;
+}
+
+.dise{
+    color: #146EB0;
+}
+
+.jota{
+    color: #EFD81D;
+}
+
+.sas{
+    color: rgb(255, 0, 64);
+}
+
+.habi{
+    font-size: .8rem;
+    text-align: center;
+}
+
+
+/*------SEGUNDO SECCION PRINCNIPIO----------------------------------------------*/
+/*-------------------------------------*/
+
+
+
+.hr2{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+}
+
+.pro{
+   text-align: center;
+   font-size: 3rem;
+}
+
+.contenedor-skill{
+    width: 80%; 
+     min-height:40rem;  
+     margin-left: auto;
+     margin-right: auto;
+} 
+
+.proyecto{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.skill{
+    width: 95%;
+    border-radius: 2.4rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: var(--bg-color);
+}
+
+.skill a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem 1rem;
+}
+
+.none{
+    display: none;
+}
+
+.slider {
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slides {
+    display: flex;
+    width: 90%;
+    height: 86%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+  }
+  
+  .slides > div {
+    scroll-snap-align: start; 
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+
+/*----------------------------------------------------------*/
+
+/*- todo lo del html slider ------------------*/
+
+
+.skillh{
+    width: 80%;
+    border-radius: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+} 
+
+.skillh a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: block;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.sliderh {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+  
+  .slidesh {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+  }
+  
+  .slidesh > div {
+    scroll-snap-align: start; 
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background: #eee; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+
+  .slidesh > div img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+  }
+
+  /*-----------------------------------------------------------------*/
+
+/*-------todo lo de css al deslizar
+----------------------------------------------------*/
+
+
+  .skills{
+    width: 50%;
+    border-radius: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+} 
+
+.skills a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: block;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.sliders {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+  
+  .slidesr {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+  }
+  
+  .slidesr > div {
+    scroll-snap-align: start; 
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background: #eee; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slidesr > div img{
+      width:100%;
+      height: 100%;
+      object-fit: contain;
+  }
+  /**----------------------------------------------------**/
+
+  /*--- todo lo del js con el slider ----------*/
+  
+  
+  .skillj{
+    width: 50%;
+    border-radius: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+} 
+
+.skillj a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+}
+
+
+
+.sliderj {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+  
+  .slidesj {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+  }
+  
+  .slidesj > div {
+    scroll-snap-align: start; 
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+
+  .slidesj > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+  /*-----------------------------------------------------*/
+  /*----------------TODO LO DE REACT ----------------*/
+
+  .skillr{
+    width: 50%;
+    border-radius: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.skillr a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+}
+
+.sliderr {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+  
+  .slidesrr {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+  }
+  
+  .slidesrr > div {
+    scroll-snap-align: start; 
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+
+  .slidesrr > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/*--SEGUNDO SECCION FINAL---*/
+/*-----------------------------------------------*/
+
+/*-TERCER SECCION PRINCIPIO-*/
+hr{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+}
+ .temas{
+    width: 100%;
+     min-height: 100vh; 
+    padding-top: 3rem;
+} 
+
+.habili{
+ text-align: center;
+ font-size: 3rem;
+ margin-bottom: 3rem;
+}
+ 
+
+.temarios{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(266px, 267px));
+    grid-template-rows: repeat(auto-fit,minmax(317,318px));
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.every{
+    width: 90%; 
+    
+    background-color:var(--bg-color) ;
+    border-radius: 2rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    min-height: 23rem;
+}
+
+.every:hover{ 
+    outline: 2px solid rgb(0, 0, 0);   
+}
+
+.mb {
+  
+    line-height: 3rem;
+    font-size: 2.3rem;
+}
+
+.ver{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+    
+}
+
+.da{
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.html strong{
+    color: #DC4A25;
+}
+
+.css{
+    margin-right: 1rem;   
+}
+
+.css strong{
+    color: #146EB0;
+    line-height: 3rem;
+    font-size: 2.3rem;
+}
+
+.js{
+    margin-right: 1rem;
+}
+
+.js strong{
+    color: #EFD81D;
+    line-height: 3rem;
+    font-size: 2.3rem;
+}
+
+.reat{
+    margin-right: 1rem;
+}
+
+.react strong{
+    color: #5ED3F3;
+    line-height: 3rem;
+    font-size: 2.3rem;
+}
+
+.watch{
+    text-decoration: none;
+}
+
+.fli{
+  text-decoration: none;
+}
+
+.icon{
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+}
+
+.flecha{ 
+    text-align: center;
+ font-size: 3rem;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+footer{
+    width: 100%;
+    background-color: #15181C;
+    text-align: center;
+   
+}
+
+footer i{
+    margin-right: 2rem;
+}
+
+/*-----TERCER SECCION FINAL ---------------
+-------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .boton{
+        display: none;
+    }
+
+    .header{
+        height: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .logo{
+        margin-left: 4rem;
+    }
+
+    .nav{
+            width: auto;
+            min-height: auto;
+            position: static;
+            background-color: transparent;
+            
+            transform: translateX(0);
+            display: flex;
+            flex-direction: row;
+        }
+        
+    .nav a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: rgb(255, 255, 255);
+        border: none;
+    }
+
+    .container{
+        min-height: calc(100vh - 9rem);
+        display: block;
+        align-items: center;
+    }
+
+    .habilitys{
+        display: flex;
+        height: 3rem;
+    }
+
+    .habilitys li{
+        font-size: 5rem;
+       margin: .5rem;
+   }
+   
+    .habilidades{
+        width: 50%;
+        height: 3rem;
+        display: flex;
+        margin-top: 3%;
+    }
+
+    .azul{
+        color: #5ED3F3;
+    }
+
+    .nara{
+        color: #DC4A25;
+    }
+
+    .dise{
+        color: #1431b0;
+    }
+
+    .jota{
+        color: #EFD81D;
+    }
+
+    .sas{
+        color: rgb(255, 0, 64);
+    }
+
+    .main{
+        width: 50%;
+        height: 35%;
+        text-align: center;
+    
+    }
+
+    .dentro-main{
+       text-align: center ;
+    }
+
+    .none{
+        display: inline;
+    }
+ 
+  
+}
